@@ -1,0 +1,36 @@
+IMDB SENTIMENT ANALYSIS PROJECT
+========================================
+
+1. Dataset Information
+Total reviews: 49582
+Sentiment counts:
+sentiment
+positive    24884
+negative    24698
+Name: count, dtype: int64
+
+2. Model
+Algorithm: Multinomial Naive Bayes
+Feature extraction: TF-IDF
+
+3. Model Accuracy
+88.45 %
+
+4. Classification Report
+              precision    recall  f1-score   support
+
+    negative       0.89      0.88      0.88      4940
+    positive       0.88      0.89      0.89      4977
+
+    accuracy                           0.88      9917
+   macro avg       0.88      0.88      0.88      9917
+weighted avg       0.88      0.88      0.88      9917
+
+
+5. Confusion Matrix
+[[4323  617]
+ [ 528 4449]]
+
+6. Project Limitations
+Sarcasm and complex context may be difficult to detect.
+Performance may vary on text outside IMDB movie reviews.
